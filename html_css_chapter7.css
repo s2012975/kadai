@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+main {
+  width: 100%;
+}
+
+div {
+  height: 200px;
+}
+
+.box1 {
+  background-image: url(img/box1.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.box2 {
+  background-image: url(img/box2.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.box3 {
+  background-image: url(img/box3.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.box4 {
+  background-image: url(img/box4.jpg);
+  background-position: center;
+  background-size: cover;
+}
