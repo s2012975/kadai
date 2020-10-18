@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  height: 50px;
+  background-color: #ff9a4b;
+}
+
+main {
+  width: 960px;
+  margin: 50px auto;
+  display: flex;
+  justify-content: center;
+}
+
+.box {
+  width: 300px;
+  position: relative;
+  padding: 10px;
+  background-color: #eeeeee;
+  margin-right: 30px;
+}
+
+.box:last-child {
+  margin-right: 0;
+}
+
+.item {
+  background-color: #ff9a4b;
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  padding: 3px; /* 問題にサイズ指定がなかったと思いますが、解答に合わせました。*/
+}
+
+.img1 {
+  height: 150px;
+  background-image: url(img/flow01.png);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.img2 {
+  height: 150px;
+  background-image: url(img/flow02.png);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.img3 {
+  height: 150px;
+  background-image: url(img/flow03.png);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.title {
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+footer {
+  height: 50px;
+  background-color: #aaaaaa;
+}
