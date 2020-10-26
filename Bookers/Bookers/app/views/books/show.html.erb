@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8">
+    <link>
+    <title>Bookers</title>
+  </head>
+
+  <body>
+    <h2>title:</h2>
+    <p><%= @book.title %></p>
+    <h2>body:</h2>
+    <p><%= @book.body %></p>
+
+    <div>
+
+      <%= link_to "Edit", edit_book_path(@book.id) %> | 
+      <%= link_to "Back", books_path %>
+    </div>
+  </body>
+</html>

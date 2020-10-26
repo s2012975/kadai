@@ -1,3 +1,24 @@
 // Place all the styles related to the homes controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+body {
+  padding: 30px;
+}
+
+.content {
+  padding: 30px;
+}
+
+td {
+  padding: 5px 10px;
+}
+
+.item {
+  text-align: left;
+}
+
+table {
+  font-weight: normal;
+  padding: 20px 0px;
+}
