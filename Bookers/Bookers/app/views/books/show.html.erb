@@ -1,21 +1,13 @@
-<!DOCTYPE html>
-<html lang="ja">
-  <head>
-    <meta charset="UTF-8">
-    <link>
-    <title>Bookers</title>
-  </head>
+<body>
+  <div class="show-content">
+    <p class="show-content-detail"><strong>title: </strong><%= @book.title %></p>
 
-  <body>
-    <h2>title:</h2>
-    <p><%= @book.title %></p>
-    <h2>body:</h2>
-    <p><%= @book.body %></p>
+    <p class="show-content-detail"><strong>body: </strong><%= @book.body %></p>
+  </div>
 
-    <div>
+  <div class="under-menu">
+    <%= link_to "Edit", edit_book_path(@book.id) %> |
+    <%= link_to "Back", books_path %>
+  </div>
 
-      <%= link_to "Edit", edit_book_path(@book.id) %> | 
-      <%= link_to "Back", books_path %>
-    </div>
-  </body>
-</html>
+</body>

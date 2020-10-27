@@ -19,3 +19,61 @@
     box-sizing: border-box;
 }
 
+body {
+  padding: 30px;
+}
+
+.content {
+  padding: 30px;
+}
+
+
+/* ================== */
+
+td {
+  padding: 5px 10px;
+}
+
+.item {
+  text-align: left;
+}
+
+table {
+  font-weight: normal;
+  padding: 20px 0px;
+}
+
+.new-book {
+  padding: 10px 0;
+}
+
+ul {
+  text-align: left;
+}
+
+li {
+  display: inline-block;
+  list-style: none;
+  margin-right: 10px;
+}
+
+li:hover {
+  background-color: gray;
+}
+
+li:last-child {
+  margin-right:  0;
+}
+
+.under-menu {
+  padding: 10px 0;
+}
+
+.show-content {
+  padding: 0 50px;
+}
+
+.show-content-detail{
+  margin-bottom: 50px;
+}
+
