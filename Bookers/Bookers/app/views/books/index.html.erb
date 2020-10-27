@@ -1,4 +1,11 @@
 <body>
+
+  <% if flash[:notice] %>
+    <div class="flash">
+      <%= flash[:notice] %>
+    </div>
+  <% end %>
+
   <h1 class="title">Books</h1>
 
 
@@ -14,11 +21,11 @@
       <tr class="item">
         <td><%= book.title %></td>
         <td><%= book.body %></td>
-        <td>
+        <td class="option">
           <ul>
-            <li><%= link_to "Show", book_path(book.id) %></li>
-            <li><%= link_to "Edit", edit_book_path(book.id) %></li>
-            <li><%= link_to 'Destroy', destroy_book_path(book.id), method: :delete, "data-confirm" => "Are you sure?" %></li>
+            <li class="item-list"><%= link_to "Show", book_path(book.id) %></li>
+            <li class="item-list"><%= link_to "Edit", edit_book_path(book.id) %></li>
+            <li class="item-list"><%= link_to 'Destroy', destroy_book_path(book.id), method: :delete, "data-confirm" => "Are you sure?" %></li>
           </ul>
         </td>
       </tr>
@@ -26,8 +33,25 @@
   </table>
 
 
-    <h2 class="new-book">New Book</h2>
+  <h2 class="new-book">New Book</h2>
 
+  <div class="alert-box">
+    <% if @book.errors.any? %>
+      <div class="alert-warning">
+        <div class="alert-title">
+          Error
+        </div>
+        <div>
+          <% @book.errors.full_messages.each do |message| %>
+            <div class="alert-message">・<%= message %></div>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
+  </div>
+
+
+  <div class="create-box">
     <%= form_with model: @book, url:'/books', local:true do |f| %>
       <p>Title</p>
       <%= f.text_field :title %>
@@ -37,5 +61,6 @@
         <%= f.submit "Create Book" %>
       </p>
     <% end %>
+  </div>
 
-  </body>
+</body>

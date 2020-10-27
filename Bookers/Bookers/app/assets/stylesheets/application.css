@@ -70,10 +70,29 @@ li:last-child {
 }
 
 .show-content {
-  padding: 0 50px;
+  margin-left: 50px;
 }
 
 .show-content-detail{
   margin-bottom: 50px;
 }
 
+.flash {
+  margin-left: 50px;
+  margin-bottom: 30px;
+  color: green;
+}
+
+.alert-warning {
+  width: 300px;
+}
+
+
+.alert-title {
+  background-color: red;
+  color: white;
+}
+
+.alert-message {
+  background-color: silver;
+}
