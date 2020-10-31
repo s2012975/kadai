@@ -1,0 +1,13 @@
+PRAGMA foreign_keys=OFF;
+BEGIN TRANSACTION;
+CREATE TABLE IF NOT EXISTS "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY);
+INSERT INTO schema_migrations VALUES('20170331045923');
+CREATE TABLE IF NOT EXISTS "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL);
+INSERT INTO ar_internal_metadata VALUES('environment','development','2017-03-31 05:21:00.324397','2017-03-31 05:21:00.324397');
+CREATE TABLE IF NOT EXISTS "posts" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "content" text, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL);
+INSERT INTO posts VALUES(1,'次は何の本を読もうかな。ffff','2017-03-31 05:24:15.529063','2020-10-31 10:47:05.339505');
+INSERT INTO posts VALUES(2,'今日のランチおいしかった。aaa','2017-03-31 05:24:32.004378','2020-10-31 10:46:59.028518');
+INSERT INTO posts VALUES(6,'hhh','2020-10-31 11:08:53.600195','2020-10-31 11:08:53.600195');
+DELETE FROM sqlite_sequence;
+INSERT INTO sqlite_sequence VALUES('posts',6);
+COMMIT;
