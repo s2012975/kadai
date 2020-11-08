@@ -1,18 +1,21 @@
-<div>welcome to Bookers !!</div>
-<p></p>
-In Bookers,
+<div class="main-top">
+	<h1>welcome to <span class="glyphicon glyphicon-book" aria-hidden="true"></span><strong>Bookers</strong> !!</h1>
+		<p>
+		  In <span class="glyphicon glyphicon-book" aria-hidden="true"></span><strong>Bookers</strong>,
+		</p>
+		<p>
+		  you can share and exchange your opinions , impressions , and emotions<br>
 
-you can share and exchange your opinions , impressions , and emotions
-
-about various books!
-</div>
+		  about various books!
+		</p>
 
 
-<div class="top-registration-menue">
-  <div class="top-registration-login">
-	  <%= link_to 'Log in', new_user_session_path, class: "btn btn-primary" %>
+	<div class="top-registration-menue">
+	  <div class="top-registration-login">
+		  <%= link_to 'Log in', new_user_session_path, class: "btn btn-primary" %>
+		</div>
+		<div class="top-registration-sing-up">
+		  <%= link_to 'Sign Up', new_user_registration_path, class: "btn btn-success" %>
+	  </div>
 	</div>
-	<div class="top-registration-sing-up">
-	  <%= link_to 'Sign Up', new_user_registration_path, class: "btn btn-success" %>
-  </div>
 </div>

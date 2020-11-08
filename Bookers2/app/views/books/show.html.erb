@@ -22,20 +22,22 @@
 	 			</tbody>
 	 		</table>
 
-	    <% if current_user.id == @user.id %>
-	    	<%= link_to(edit_user_path(current_user.id), class: "") do %>
-			  	<span class="">edit</span>
-	    	<% end %>
-	    <% end %>
+	    <div class="user-edit">
+		    <% if current_user.id == @user.id %>
+		    	<%= link_to(edit_user_path(current_user.id), class: "user-edit-icon") do %>
+				  	<span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+		    	<% end %>
+		    <% end %>
+		  </div>
 
 	    <h1>New book</h1>
 	      <%= form_for(@book_new) do |f| %>
 				  <p>Title</p>
-				  <%= f.text_field :title , class: ""%>
+				  <%= f.text_field :title , class: "new-book-title"%>
 				  <p>opinion</p>
-				  <%= f.text_area :body, class: ""%>
+				  <%= f.text_area :body, class: "new-book-body"%>
 				  <br>
-				  <%= f.submit 'Create Book', class: "" %>
+				  <%= f.submit 'Create Book', class: "new-create-book btn-primary" %>
 	      <% end %>
 
     </div>

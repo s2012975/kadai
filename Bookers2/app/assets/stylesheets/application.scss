@@ -17,3 +17,125 @@
 
   @import "bootstrap-sprockets";
   @import "bootstrap";
+
+
+  /* application.html */
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  h2.title {
+    color: white;
+  }
+
+  header {
+    width: 100%;
+    hight: 50px;
+    background-color: black;
+  }
+
+
+  .header-list {
+    width: 950px;
+    margin: 0 auto;
+  }
+
+  main {
+    width: 950px;
+    margin: 0 auto;
+  }
+
+  .nav-top {
+    width: 950px;
+    hight: 50px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  .top-title {
+    font-size: 20px;
+    color: #ffffff;
+  }
+
+  .menu-index {
+    color: #ffffff;
+  }
+
+
+  ul.menu-index {
+    display: inline-block;
+    text-align: right;
+    padding: 10px 0;
+  }
+
+  li.menu-index-item {
+    display: inline-block;
+    text-align: right;
+    list-style: none;
+    margin-right: 10px;
+    color: white;
+  }
+
+  .flash {
+    width: 950px;
+    margin: 0 auto;
+    color: green;
+  }
+
+  footer {
+    width: 950px;
+    margin: 0 auto;
+    text-align: right;
+  }
+
+  /* top */
+
+  .main-top {
+    width: 750px;
+    margin: 0 auto;
+  }
+
+  .top-registration-menue {
+    width: 700px;
+    margin: 0 auto;
+  }
+
+  .btn {
+    width: 100%;
+  }
+
+  .signup-actions {
+    margin: 10px 0;
+  }
+
+  .login-actions {
+    margin: 10px 0;
+  }
+
+  .user-edit-icon {
+    width: 100%;
+    text-align: center;
+    border: 1px solid gray;
+    padding: 5px 48%;
+    border-radius: 10px;
+  }
+
+  .user-edit {
+    width: 100%;
+    text-align: center;
+  }
+
+  .new-book-body {
+    width: 100%;
+  }
+
+  .new-book-title {
+    width: 100%;
+  }
+
+  .new-create-book {
+    width: 100%;
+  }
