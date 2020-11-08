@@ -2,7 +2,7 @@
   <div class="row">
  	  <div class="col-xs-3" style="">
 
-	 		<h2>User info</h2>
+	 		<h1>User info</h1>
 	 		  <% if @user.profile_image != nil %>
 	        <%= attachment_image_tag @user, :profile_image, :fill, 100, 100, format: 'jpeg' %>
 	      <% else %>
@@ -12,7 +12,7 @@
 	 		<table class="table table-striped">
 	 			<tbody>
 	 				<tr>
-	 				  <td>name</td>
+	 				  <td>Name</td>
 	 				  <td><%= @user.name %></td>
 	 				</tr>
 	 				<tr>
@@ -22,21 +22,23 @@
 	 			</tbody>
 	 		</table>
 
-	    <% if current_user.id == @user.id %>
-	      <%= link_to(edit_user_path(current_user.id), class: "") do %>
-			    <span class="">edit</span>
-	      <% end %>
-	    <% end %>
+      <div class="user-edit">
+		    <% if current_user.id == @user.id %>
+		      <%= link_to(edit_user_path(current_user.id), class: "user-edit-icon") do %>
+				    <span class="glyphicon glyphicon-wrench" aria-hidden="true"></span>
+		      <% end %>
+		    <% end %>
+	    </div>
 
 
 	    <h1>New book</h1>
 	      <%= form_for(@book) do |f| %>
 				  <p>Title</p>
-				    <%= f.text_field :title , class: ""%>
-				  <p>opinion</p>
-				    <%= f.text_area :body, class: ""%>
+				    <%= f.text_field :title , class: "new-book-title"%>
+				  <p>Opinion</p>
+				    <%= f.text_area :body, class: "new-book-body"%>
 				  <br>
-				    <%= f.submit 'Create Book', class: "" %>
+				    <%= f.submit 'Create Book', class: "new-create-book btn-primary" %>
 	      <% end %>
 
     </div>
