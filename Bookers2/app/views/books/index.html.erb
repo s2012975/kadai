@@ -13,17 +13,17 @@
 
 
 <div class="container">
-  <div class="">
- 	  <div class="" style="">
+  <div class="row">
+ 	  <div class="col-xs-3" style="">
 
 	 		<h2>User info</h2>
-	 		<% if @user.profile_image != nil %>
-	          <%= attachment_image_tag @user, :profile_image, :fill, 100, 100, format: 'jpeg' %>
-	        <% else %>
-	          <%= image_tag 'no_image_square', style: "height: 150px" %>
-	        <% end %>
+	 		  <% if @user.profile_image != nil %>
+	        <%= attachment_image_tag @user, :profile_image, :fill, 100, 100, format: 'jpeg' %>
+	      <% else %>
+	        <%= image_tag 'no_image_square', style: "height: 150px" %>
+	      <% end %>
 
-	 		<table class="">
+	 		<table class="table table-striped">
 	 			<tbody>
 	 				<tr>
 	 				  <td>name</td>
@@ -46,16 +46,16 @@
 	    <h1>New book</h1>
 	      <%= form_for(@book) do |f| %>
 				  <p>Title</p>
-				  <%= f.text_field :title , class: ""%>
+				    <%= f.text_field :title , class: ""%>
 				  <p>opinion</p>
-				  <%= f.text_area :body, class: ""%>
+				    <%= f.text_area :body, class: ""%>
 				  <br>
 				  <%= f.submit 'Create Book', class: "" %>
 	      <% end %>
 
     </div>
 
-	  <div class="">
+	  <div class="col-xs-9">
     	<table class="table table-striped">
     		<thead>
     			<tr>
@@ -67,14 +67,14 @@
     		<tbody>
     			<% @books.each do |book| %>
       			<tr class="new-table">
-      				<td><span><%= attachment_image_tag book.user, :profile_image, :fill, 50, 50, format: 'jpeg', fallback: "no_image_square.jpg", size:'50x50' %></span></td>
+      				<td><span><%= link_to (attachment_image_tag book.user, :profile_image, :fill, 50, 50, format: 'jpeg', fallback: "no_image_square.jpg", size:'50x50'), user_path(book.user) %></span></td>
       				<td><span><%= link_to book.title, "/books/#{book.id}"%></span></td>
       				<td><span><%= book.body %></span></td>
       			</tr>
     			<% end %>
-
     		</tbody>
     	</table>
+
 	  </div>
   </div>
 </div>
