@@ -1,6 +1,20 @@
 <div class="">
 
   <h1>Editing Book</h1>
+
+  <div class="error-message">
+    <div class="alert alert-warning">
+    	<% if @book.errors.any? %>
+        <ul>
+        	<p>error</p>
+          <% @book.errors.full_messages.each do |message| %>
+            <li><%= message %></li>
+          <% end %>
+        </ul>
+      <% end %>
+    </div>
+  </div>
+
     <%= form_for(@book) do |f| %>
       <p>Title</p>
       <%= f.text_field :title , class: "edit-title"%>
@@ -10,7 +24,7 @@
     <% end %>
 
   <p>
-    <%= link_to "show", book_path %> |
+    <%= link_to "Show", book_path %> |
     <a href="/books">Back</a>
   </p>
 

@@ -1,3 +1,17 @@
+<div class="error-message">
+  <div class="alert alert-warning">
+  	<% if @book.errors.any? %>
+      <ul>
+      	<p>error</p>
+        <% @book.errors.full_messages.each do |message| %>
+          <li><%= message %></li>
+        <% end %>
+      </ul>
+    <% end %>
+  </div>
+</div>
+
+
 <div class="container">
   <div class="">
  	  <div class="" style="">

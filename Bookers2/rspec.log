@@ -241,7 +241,7 @@ Failures:
 
   4) 投稿のテスト 編集のテスト フォームの確認 編集に失敗する
      [31mFailure/Error: expect(page).to have_content 'error'[0m
-     [31m  expected to find text "error" in "Bookers\nHome Users Books logout\nBook was successfully updated\nUser info\nname 3lx9417npa Introduction elafig8kfzsr4duoovja\nedit\nNew book\nTitle\nopinion\nBook detail\n3lx9417npa\nke9lf tm1bmn5vuvnaffxjhqz6\nedit\ndestroy\nCopyRight Infratop.inc"[0m
+     [31m  expected to find text "error" in "Bookers\nHome Users Books logout\nBook was successfully updated\nUser info\nname xxa2918wwe Introduction 133kgd0u4i13qhshp32u\nedit\nNew book\nTitle\nopinion\nBook detail\nxxa2918wwe\ntckll 6xr6dnc5ogcr5usk7ar8\nedit\ndestroy\nCopyRight Infratop.inc"[0m
      [31m[0m
      [31m[0m
      [31m[0m
@@ -323,7 +323,7 @@ Failures:
       [31m[0m
       [31m[0m
       [31m[0m
-      [36m# ./app/views/books/index.html.erb:6:in `_app_views_books_index_html_erb__4488142820823836016_74343160'[0m
+      [36m# ./app/views/books/index.html.erb:6:in `_app_views_books_index_html_erb__2525789395978414740_75384140'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
@@ -359,7 +359,7 @@ Failures:
       [36m# --- Caused by: ---[0m
       [36m# NoMethodError:[0m
       [36m#   undefined method `profile_image' for nil:NilClass[0m
-      [36m#   ./app/views/books/index.html.erb:6:in `_app_views_books_index_html_erb__4488142820823836016_74343160'[0m
+      [36m#   ./app/views/books/index.html.erb:6:in `_app_views_books_index_html_erb__2525789395978414740_75384140'[0m
 
   14) ユーザー権限のテスト ログインしていない場合 投稿関連のURLにアクセス 編集画面に遷移できない
       [31mFailure/Error: expect(current_path).to eq('/users/sign_in')[0m
@@ -381,7 +381,7 @@ Failures:
       [31m[0m
       [31m[0m
       [31m[0m
-      [36m# ./app/views/books/show.html.erb:6:in `_app_views_books_show_html_erb__1437458294998126317_65124460'[0m
+      [36m# ./app/views/books/show.html.erb:6:in `_app_views_books_show_html_erb___3230067836047839039_65941280'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
@@ -417,7 +417,7 @@ Failures:
       [36m# --- Caused by: ---[0m
       [36m# NoMethodError:[0m
       [36m#   undefined method `profile_image' for nil:NilClass[0m
-      [36m#   ./app/views/books/show.html.erb:6:in `_app_views_books_show_html_erb__1437458294998126317_65124460'[0m
+      [36m#   ./app/views/books/show.html.erb:6:in `_app_views_books_show_html_erb___3230067836047839039_65941280'[0m
 
   16) ユーザー権限のテスト ログインしていない場合にユーザー関連のURLにアクセス ユーザー関連のURLにアクセス 一覧画面に遷移できない
       [31mFailure/Error: <% if @user.profile_image != nil %>[0m
@@ -427,7 +427,7 @@ Failures:
       [31m[0m
       [31m[0m
       [31m[0m
-      [36m# ./app/views/users/index.html.erb:6:in `_app_views_users_index_html_erb__3464971886261172551_78836140'[0m
+      [36m# ./app/views/users/index.html.erb:6:in `_app_views_users_index_html_erb__329951534602247638_79656120'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
@@ -463,7 +463,7 @@ Failures:
       [36m# --- Caused by: ---[0m
       [36m# NoMethodError:[0m
       [36m#   undefined method `profile_image' for nil:NilClass[0m
-      [36m#   ./app/views/users/index.html.erb:6:in `_app_views_users_index_html_erb__3464971886261172551_78836140'[0m
+      [36m#   ./app/views/users/index.html.erb:6:in `_app_views_users_index_html_erb__329951534602247638_79656120'[0m
 
   17) ユーザー権限のテスト ログインしていない場合にユーザー関連のURLにアクセス ユーザー関連のURLにアクセス 編集画面に遷移できない
       [31mFailure/Error: expect(current_path).to eq('/users/sign_in')[0m
@@ -485,7 +485,7 @@ Failures:
       [31m[0m
       [31m[0m
       [31m[0m
-      [36m# ./app/views/users/show.html.erb:25:in `_app_views_users_show_html_erb__4124425764751700341_66959120'[0m
+      [36m# ./app/views/users/show.html.erb:25:in `_app_views_users_show_html_erb___1799973155354008738_67811140'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:36:in `block in call'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `catch'[0m
       [36m# /home/ec2-user/.rvm/gems/ruby-2.6.3/gems/warden-1.2.9/lib/warden/manager.rb:34:in `call'[0m
@@ -521,7 +521,7 @@ Failures:
       [36m# --- Caused by: ---[0m
       [36m# NoMethodError:[0m
       [36m#   undefined method `id' for nil:NilClass[0m
-      [36m#   ./app/views/users/show.html.erb:25:in `_app_views_users_show_html_erb__4124425764751700341_66959120'[0m
+      [36m#   ./app/views/users/show.html.erb:25:in `_app_views_users_show_html_erb___1799973155354008738_67811140'[0m
 
   19) トップページのテスト ボディ部分のテスト 表示の確認 Log inリンクが表示される
       [31mFailure/Error: expect(login_link).to match(/log in/i)[0m
@@ -573,7 +573,7 @@ Failures:
 
   23) ユーザーのテスト 編集のテスト 表示の確認 編集に失敗する
       [31mFailure/Error: expect(page).to have_content 'error'[0m
-      [31m  expected to find text "error" in "Bookers\nHome Users Books logout\nUser was successfully updated\nUser info\nname vwwb1gmv6x Introduction xc93jh5lbfx5p8m205ii\nedit\nNew book\nTitle\nopinion\n　　　　\nBooks\ntitle\nopinion\ncmg3e 6k780jxtmxpqw70js2ia\nCopyRight Infratop.inc"[0m
+      [31m  expected to find text "error" in "Bookers\nHome Users Books logout\nUser was successfully updated\nUser info\nname xmxrob742g Introduction bh1hzvh3kl48kjni47gq\nedit\nNew book\nTitle\nopinion\n　　　　\nBooks\ntitle\nopinion\nbxati hov86k7hr7azfv16nrzf\nCopyRight Infratop.inc"[0m
       [31m[0m
       [31m[0m
       [31m[0m
@@ -587,7 +587,7 @@ Failures:
       [31m[0m
       [36m# ./spec/system/users_spec.rb:147:in `block (4 levels) in <main>'[0m
 
-Finished in 3.33 seconds (files took 1.32 seconds to load)
+Finished in 3.55 seconds (files took 1.35 seconds to load)
 [31m95 examples, 24 failures[0m
 
 Failed examples:
