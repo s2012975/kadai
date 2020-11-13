@@ -1,0 +1,19 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.red {
+  width: 500px;
+  height: 1000px;
+  background-color: red;
+  padding: 100px;
+}
+
+.yellow {
+  width: 100px;
+  height: 100px;
+  background-color: blue;
+  border: 5px solid yellow;
+}
